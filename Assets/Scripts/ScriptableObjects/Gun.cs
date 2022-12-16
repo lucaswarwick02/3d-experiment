@@ -5,6 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "New Gun", fileName ="Gun")]
 public class Gun : ScriptableObject
 {
+    [Header("Positions")]
     public Vector3 offset;
     public Vector3 firePoint;
 
@@ -43,38 +44,36 @@ public class Gun : ScriptableObject
 
     [ContextMenu("Generate AR")]
     void GenerateAR () {
+        // Positions
+        offset = new Vector3(0.47f,-0.77f,0.95f);
+        firePoint = new Vector3(0.48f, -0.21f, 2.7f);
+
         // Values
-        _damage = 10;
-        _fireRate = 0.15f;
+        _damage = 8;
+        _fireRate = 0.1f;
         _isAuto = true;
         _zoom = 45f;
         _recoil = 10f;
         _recoilRecovery = 20f;
         _count = 1;
         _accuracy = 2f;
-
-        // Vanity
-        _name = "Example AR";
-        _description = "Example Description";
-        _rarity = Rarity.Common;
     }
 
     [ContextMenu("Generate Pistol")]
     void GeneratePistol () {
+        // Positions
+        offset = new Vector3(0.5f, -0.65f, 1.1f);
+        firePoint = new Vector3(0.49f, -0.24f, 2.21f);
+        
         // Values
         _damage = 25;
-        _fireRate = 0.35f;
+        _fireRate = 0.15f;
         _isAuto = false;
         _zoom = 40f;
         _recoil = 20f;
         _recoilRecovery = 20f;
-        _count =1;
+        _count = 1;
         _accuracy = 1f;
-
-        // Vanity
-        _name = "Example Pistol";
-        _description = "Example Description";
-        _rarity = Rarity.Common;
     }
 
     /// <summary>
@@ -90,9 +89,11 @@ public class Gun : ScriptableObject
         gunObject.transform.localScale = new Vector3(0.25f, 0.25f, 0.25f);
 
         // Set the Skin
-        Material gunMaterial = new Material(Shader.Find("Standard"));
-        gunMaterial.SetTexture("_MainTex", gun.Skin);
+        Material gunMaterial = new Material(Shader.Find("Universal Render Pipeline/Lit"));
+        gunMaterial.SetTexture("_BaseMap", gun.Skin);
+        gunMaterial.SetFloat("_Smoothness", 0f);
         gunObject.GetComponentInChildren<MeshRenderer>().material = gunMaterial;
+        gunObject.GetComponentInChildren<MeshRenderer>().receiveShadows = false;
 
         // Remove the MeshCollider
         if (removeCollider) {

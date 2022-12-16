@@ -9,7 +9,7 @@ public class PlayerInteract : MonoBehaviour
     GameObject hoveredObject;
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         bool interact = Input.GetKeyDown(KeyCode.E);
 

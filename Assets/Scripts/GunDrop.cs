@@ -5,7 +5,7 @@ using UnityEngine;
 public class GunDrop : MonoBehaviour
 {
     public Gun gun;
-    public Light pointLight;
+    //public Light pointLight;
     Outline outline;
 
     private void Start() {
@@ -19,10 +19,10 @@ public class GunDrop : MonoBehaviour
         outline.OutlineColor = Item.GetRarityColor(gun.Rarity);
 
         model.transform.localPosition = Vector3.zero;
-        pointLight.color = Item.GetRarityColor(gun.Rarity);
+        //pointLight.color = Item.GetRarityColor(gun.Rarity);
 
         if (gun.Rarity == Rarity.Legendary || gun.Rarity == Rarity.Mythical) {
-            pointLight.intensity = 50f;
+            //pointLight.intensity = 50f;
         }
     }
 

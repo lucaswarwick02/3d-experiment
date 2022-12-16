@@ -23,7 +23,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 7075
+  controlID: 25431
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -64,7 +64,7 @@ MonoBehaviour:
   m_RenderIMGUI: 1
   m_EnterPlayModeBehavior: 1
   m_UseMipMap: 0
-  m_VSyncEnabled: 0
+  m_VSyncEnabled: 1
   m_Gizmos: 0
   m_Stats: 0
   m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 7076
+  controlID: 25432
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -165,7 +165,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 7077
+  controlID: 25433
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -190,7 +190,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 7020
+  controlID: 25434
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -250,7 +250,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: f80cffff440fffff500fffffa811ffff7881ffff3894ffff20faffff0cfbffff
+      m_ExpandedIDs: 78f3fcfff80cffff440fffff500fffffa811ffff7881ffff3894ffff0cfbffff105d00001a5d0000465d0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -526,9 +526,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -15.160849, y: 0.9436097, z: 28.386244}
+    m_Target: {x: 35.90734, y: -11.679607, z: -21.859243}
     speed: 2
-    m_Value: {x: -15.160849, y: 0.9436097, z: 28.386244}
+    m_Value: {x: 35.90734, y: -11.679607, z: -21.859243}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -575,13 +575,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.013858026, y: -0.97816455, z: 0.19754644, w: -0.06303597}
+    m_Target: {x: 0.06040419, y: 0.93901145, z: -0.20853625, w: 0.2667052}
     speed: 2
-    m_Value: {x: -0.013858053, y: -0.97816646, z: 0.19754682, w: -0.0630361}
+    m_Value: {x: 0.06040388, y: 0.9390066, z: -0.20853518, w: 0.2667038}
   m_Size:
-    m_Target: 10
+    m_Target: 24.117138
     speed: 2
-    m_Value: 10
+    m_Value: 24.117138
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -674,21 +674,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Misc
+    - Assets/ScriptableObjects/Guns/Rifles
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Misc
+  - Assets/ScriptableObjects/Guns/Rifles
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\lucas\Documents\Projects\3d-experiment
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 27}
-    m_SelectedIDs: bc600000
-    m_LastClickedID: 24764
+    m_SelectedIDs: cc600000
+    m_LastClickedID: 24780
     m_ExpandedIDs: 00000000986000009a6000009c6000009e600000a0600000a2600000a460000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
